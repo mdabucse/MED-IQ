@@ -8,6 +8,10 @@
 
 This project aims to automate the extraction of medical information from images and texts. It leverages various machine learning models and techniques, including Optical Character Recognition (OCR), Named Entity Recognition (NER), and pre-trained Large Language Models (LLMs). The dataset used for training and evaluation is sourced from web scraping medical information.
 
+
+## Live Demo
+
+
 ## Workflow
 ![Input](https://raw.githubusercontent.com/mdabucse/Drastic-Innovators-Aventus-2.0/main/WorkFLow.png)
 
@@ -75,3 +79,36 @@ We utilize web scraping to gather data from various medical websites. The proces
 - *Requests*: To send HTTP requests to the target website and retrieve the HTML content.
 - *BeautifulSoup*: To parse the HTML content and extract relevant information.
 - *Scrapy*: For more advanced and large-scale web scraping tasks.
+## Setup and Installation Process
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+- Python 3.6 or higher
+- pip (Python package installer)
+- Git
+### Installation Steps
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+2. **Create A Virtual Environment:**
+   ```bash
+   python -m venv venv
+   ```
+3.**Acticate The Environment:**
+```bash
+venv\Scripts\activate
+```
+4.**Install The Required Modules:**
+```bash
+pip install -r requirements.txt
+```
+
+### Run 
+```bash
+streamlit run Main.py
+```
