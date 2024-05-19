@@ -9,7 +9,7 @@
 This project aims to automate the extraction of medical information from images and texts. It leverages various machine learning models and techniques, including Optical Character Recognition (OCR), Named Entity Recognition (NER), and pre-trained Large Language Models (LLMs). The dataset used for training and evaluation is sourced from web scraping medical information.
 
 ## Workflow
-![Input](1.png)
+![Input](https://raw.githubusercontent.com/mdabucse/Drastic-Innovators-Aventus-2.0/main/WorkFLow.png)
 
 ## Table of Contents
 
@@ -75,37 +75,3 @@ We utilize web scraping to gather data from various medical websites. The proces
 - *Requests*: To send HTTP requests to the target website and retrieve the HTML content.
 - *BeautifulSoup*: To parse the HTML content and extract relevant information.
 - *Scrapy*: For more advanced and large-scale web scraping tasks.
-
-### Example Script for Web Scraping:
-Here's a simple example of a web scraping script using Python's BeautifulSoup:
-
-python
-import requests
-from bs4 import BeautifulSoup
-import csv
-
-# URL of the website to scrape
-url = 'https://example-medical-website.com/medicines'
-
-# Send an HTTP request to the website
-response = requests.get(url)
-
-# Parse the HTML content of the page
-soup = BeautifulSoup(response.text, 'html.parser')
-
-# Initialize a list to store the scraped data
-medicines = []
-
-# Find and loop through all elements containing medicine information
-for item in soup.find_all('div', class_='medicine-item'):
-    name = item.find('h2').text
-    description = item.find('p', class_='description').text
-    medicines.append({'name': name, 'description': description})
-
-# Save the scraped data to a CSV file
-with open('medicines.csv', 'w', newline='') as csvfile:
-    fieldnames = ['name', 'description']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    for medicine in medicines:
-        writer.writerow(medicine)
