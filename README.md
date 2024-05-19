@@ -20,9 +20,8 @@ This project aims to automate the extraction of medical information from images 
 1. [Image to Text using OCR](#image-to-text-using-ocr)
 2. [NER Model for Medicine Name Extraction](#ner-model-for-medicine-name-extraction)
 3. [Pre-trained LLM Model: Mixtral-8x7B](#pre-trained-llm-model-mixtral-8x7b)
+5. [Setup and Installation](#Installation-Steps)
 4. [Medicine Dataset from Web Scraping](#medicine-dataset-from-web-scraping)
-5. [Fine Tuning The Model](#fine-tuning-the-model)
-6. [Setup and Installation](#setup-and-installation)
 
 ## Image to Text using OCR
 
@@ -91,14 +90,14 @@ Ensure you have the following installed on your system:
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
 2. **Create A Virtual Environment:**
-   ```bash
-   python -m venv venv
-   ```
+```bash
+python -m venv venv
+```
 3.**Acticate The Environment:**
 ```bash
 venv\Scripts\activate
