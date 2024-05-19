@@ -10,7 +10,7 @@ This project aims to automate the extraction of medical information from images 
 
 
 ## Live Demo
-
+https://github.com/mdabucse/Drastic-Innovators-Aventus-2.0/assets/131733014/c856b98b-185e-4c95-8b07-00b73f427aaa
 
 ## Workflow
 ![Input](https://raw.githubusercontent.com/mdabucse/Drastic-Innovators-Aventus-2.0/main/WorkFLow.png)
