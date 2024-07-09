@@ -16,3 +16,4 @@ numpy
 opencv-python-headless
 tensorflow
 google.generativeai
+torch
